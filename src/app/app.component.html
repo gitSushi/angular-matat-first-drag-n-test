@@ -1,0 +1,9 @@
+<ul class="container">
+  <li class="item item-root">{{ root.value }}</li>
+  <div *ngFor="let word of root.words">
+    <app-word [word]="word"></app-word>
+  </div>
+</ul>
+
+
+<!-- <app-grid></app-grid> -->

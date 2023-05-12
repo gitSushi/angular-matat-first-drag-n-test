@@ -1,0 +1,39 @@
+<ul>
+  <!-- (+) first -->
+  <div class="shakahaaaa">
+    <!-- <div
+      class="dropzone dropzone-before"
+      id="dropzone-before-{{ word.id }}"
+      (dragenter)="handleDragEnter($event, word.id)"
+      (dragleave)="handleDragLeave($event)"
+      (dragover)="handleDragOver($event)"
+      (drop)="handleDrop($event)"
+    >
+      (+)
+    </div> -->
+    <li
+      class="item flexy"
+      id="{{ word.id }}"
+      draggable="true"
+      (drag)="handleDrag($event)"
+      (dragstart)="handleDragStart($event, word)"
+      (dragend)="handleDragEnd($event)"
+    >
+      <span>{{ word.value }}</span>
+      <mat-icon class="my-mat-icon" fontIcon="drag_indicator"></mat-icon>
+    </li>
+
+    <div
+      class="dropzone dropzone-after"
+      id="dropzone-after-{{ word.id }}"
+      (dragenter)="handleDragEnter($event)"
+      (dragleave)="handleDragLeave($event)"
+      (dragover)="handleDragOver($event)"
+      (drop)="handleDrop($event, word)"
+    ></div>
+  </div>
+  <div *ngFor="let word of word.words">
+    <app-word [word]="word"></app-word>
+    <!-- (+) last -->
+  </div>
+</ul>

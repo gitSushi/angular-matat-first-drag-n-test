@@ -1,0 +1,97 @@
+/* html,
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 1em;
+  background-color: #79c966;
+  border-radius: 14px;
+  box-shadow: 2px 3px 3px #537e49;
+}
+
+.item-root {
+  margin-bottom: 10px;
+}
+
+.item {
+  display: in;
+  background-color: white;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: grab;
+}
+
+.dropzone {
+  height: 8px;
+  border-radius: 6px;
+}
+
+.valid-dropzone {
+  background-color: #97754f;
+}
+
+.dragged-item {
+  opacity: 0.3;
+} */
+
+/*
+******************************************** 
+STYLE FOR INSIDE SVG TREE
+********************************************
+*/
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+svg {
+  height: 95vh;
+  font-size: .1em;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 7em;
+}
+
+.container {
+  padding: 1em;
+  background-color: #79c966;
+}
+
+.item-root {
+  margin-bottom: 5em;
+}
+
+.item {
+  background-color: white;
+  padding: 2.5em 4em;
+  border-radius: 6px;
+  cursor: grab;
+}
+
+.flexy {
+  position: relative;
+}
+
+.my-mat-icon {
+  position: absolute;
+  top: -25%;
+  right: -5%;
+  transform: scale(0.5);
+}
+
+.dropzone {
+  height: 4em;
+  border-radius: 6px;
+}
+
+.valid-dropzone {
+  background-color: #537e49;
+}
+
+.dragged-item {
+  opacity: 0.3;
+}
